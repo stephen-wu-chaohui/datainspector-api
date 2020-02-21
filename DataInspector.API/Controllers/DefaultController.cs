@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DataInspector.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api")]
     [ApiController]
     public class DefaultController : ControllerBase
     {
@@ -15,7 +15,7 @@ namespace DataInspector.API.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Stephen's demo", "DataInspector API" };
         }
 
         // GET: api/Default/5
